@@ -1,6 +1,7 @@
 
 
-# TK102_GPS_PARSER & NODE_SERVER
+# TK102 GPS PARSER & NODE SERVER
+Listen,receive and parse GPS data from TK102 trackers
 
 Tk102 is a gps device which gives can post the data to a port listens on the configured port
 Here we are presenting the node server which listens required port and parses the GPRMC data and 
