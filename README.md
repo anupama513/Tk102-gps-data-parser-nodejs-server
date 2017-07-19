@@ -10,12 +10,12 @@ process the data to post process where you can store it in database or else can 
 Here we have provided the tk102 tracker setup commands of ip routing of gps data from tk102 tracker to a listening port.
    
 ## Usage
-Step 1: Install NPM <br/>
-Step 2: install nodejs <br/>
-Make sure mysql module is available in node_moudles if in case running the reachtoday_updatebase.js<br/>
+Step 1: Install `npm` <br/>
+Step 2: Install `nodejs` <br/>
+Make sure mysql module is available in node_modules, if not run reachtoday_updatebase.js<br/>
 Step 3: Running the application<br/>
 $ node reachtoday_updatedatabase.js (reachtoday_updateservice.js)<br/>
-#### you can the below output<br/>
+#### you should see the below output<br/>
 TK102 TCP GPRS Gateway v0.1-dev<br/>
 Loading...<br/>
 Setting up mysql connection..<br/>
@@ -23,7 +23,7 @@ Setting up tk102 interface..<br/>
 This port is listening...<br/>
 
 ## Testing the application 
-While running the server now<br/> 
+Make sure the server is running.<br/> 
 $ node testclient.js<br/>
 if you are using reachtoday_updatedatabase.js<br/>
 make sure the database name, table name with correct columns are available <br/>
@@ -34,17 +34,17 @@ make sure the service is running on the specified host<br/>
 =======================================
 After installing the simcard<br>
 Step 1: Check the single as well tk102 tracker activation with below<br/>
-Send the Message from your mobile to the inserted sim number into tk102 traker<br/>
+Send the Message from your mobile to the inserted sim number into tk102 tracker<br/>
 Message: begin123456<br>
 123456 is pin:can be any six digit number which you can remember Here using 123456 for easy :)<br>
 Response:begin Ok!<br>
 This reposone says your gps device is working fine<br/>
 
-Step 2: Now if you call the gps tracker installed sim number for 5 times then your number will be the trusted registered number for receiving the SOS or any co-ordinate messages to your mobile<br>
-Maximun 5 numbers can be added to the trusted group <br>
+Step 2: Call the gps tracker (installed sim number) for 5 times, then your number will become trusted number for receiving the SOS or any co-ordinate messages to your mobile<br>
+Note: Maximum 5 numbers can be added to the trusted group <br>
 
-Step 3: Set the apn<br>
-Based on the network we will have different apn<br>
+Step 3: Set up apn<br>
+Different networks have different apn. If you are in India, for example<br>
 apn for airtel is: airtelgprs.com<br>
 apn for bsnl is:bsnlnet<br>
 Now send a message for setting the appropriate apn like below<br>
