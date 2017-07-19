@@ -11,7 +11,7 @@ Here we are presenting a node server which listens to a port, parses the GPRMC d
 Step 1: Install `npm` <br/>
 Step 2: Install `nodejs` <br/> //Make sure mysql module is available in node_modules
 Step 3: Running the application<br/>
-$ `node reachtoday_updatedatabase.js` <br/> //run reachtoday_updateservice.js if you want to post the data to a service
+$ `node reachtoday_updatedatabase.js` <br/> //run `reachtoday_updateservice.js` if you want to post the data to a service
 #### you should see the below output<br/>
 TK102 TCP GPRS Gateway v0.1-dev<br/>
 Loading...<br/>
